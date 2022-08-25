@@ -12,4 +12,9 @@ LOCAL_OVERRIDES_PACKAGES := Camera2
 LOCAL_MODULE_TARGET_ARCH := arm64
 LOCAL_SRC_FILES := prebuilt/selfie.apk
 
+LOCAL_OPTIONAL_USES_LIBRARIES := \
+       androidx.camera.extensions.impl \
+       androidx.window.extensions \
+       androidx.window.sidecar
+
 include $(BUILD_PREBUILT)
